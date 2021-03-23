@@ -13,5 +13,6 @@ jobs:
           ci token: ${{ secrets.CONTINT_LOW_LEVEL_IPTV_TOKEN }}
           contint token art: ${{ secrets.CONTINT_TOKEN_ART }}
           artifactory url: https://artifactory.hi.inet/artifactory
+          tools: openplatform-tlfbfw
       - name: Get the directory output
         run: echo "${{ steps.directory.outputs.output_message }}"
