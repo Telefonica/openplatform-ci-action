@@ -24,4 +24,4 @@ outputs:
     description: "Output message"
 runs:
   using: "docker"
-  image: "docker://Telefonica/openplatform-ci-action:1"
+  image: "docker://telefonica/openplatform-ci-action:1"
