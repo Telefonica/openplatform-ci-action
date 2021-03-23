@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build
-      run: docker build . --file Dockerfile --tag Telefonica/openplatform-ci-action
+      run: docker build . --file Dockerfile --tag Telefonica/openplatform-ci-action:latest
     - name: create release
       uses: codfish/semantic-release-action@master
       if: success()

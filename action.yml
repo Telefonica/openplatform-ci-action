@@ -24,6 +24,4 @@ outputs:
     description: "Output message"
 runs:
   using: "docker"
-  image: "Dockerfile"
-#  args:
-#    - ${{ inputs.pokemon_id}}
+  image: "docker://Telefonica/openplatform-ci-action:1"
