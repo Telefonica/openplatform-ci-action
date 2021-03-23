@@ -7,6 +7,6 @@ echo ${INPUT_CI_TOKEN}
 echo ${INPUT_CONTINT_TOKEN_ART}
 echo ${INPUT_ARTIFACTORY_URL}
 
-output=$( bash -c "ls -la")
+output=$( bash -c "pwd")
 echo "::set-output name=output_message::$output"
 echo $output

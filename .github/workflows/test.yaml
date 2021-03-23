@@ -10,8 +10,8 @@ jobs:
         id: directory
         with:
           ci user: contint-low-level-iptv
-          ci token: contint-low-level-iptv-token
-          contint token art: contint-token-art-token
+          ci token: ${{ secrets.CONTINT_LOW_LEVEL_IPTV_TOKEN }}
+          contint token art: ${{ secrets.CONTINT_TOKEN_ART }}
           artifactory url: https://artifactory.hi.inet/artifactory
       - name: Get the directory output
         run: echo "${{ steps.directory.outputs.output_message }}"
