@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  custom_test:
+    runs-on: ubuntu-latest
+    name: We test it locally with act
+    steps:
+      - name: List container directory
+        uses: Telefonica/openplatform-ci-action@main
+        id: directory
+        with:
+          ci user: contint-low-level-iptv
+          ci token: contint-low-level-iptv-token
+          contint token art: contint-token-art-token
+          artifactory url: https://artifactory.hi.inet/artifactory
+      - name: Get the directory output
+        run: echo "${{ steps.directory.outputs.output_message }}"

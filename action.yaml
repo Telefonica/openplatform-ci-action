@@ -1,0 +1,27 @@
+# action.yaml
+name: "Openplatform Continious Integration Github Action"
+author: "Low Level IPTV"
+description: "Runs Continious Integration steps for an Openplatform tlf repository"
+inputs:
+  ci user:
+    description: "ci user name"
+    required: true
+  ci token:
+    description: "ci token"
+    required: true
+  contint token art:
+    description: "contint token for artifactory"
+    required: true
+  artifactory url:
+    description: "artifactory url"
+    required: true
+  depencencies:
+    description: "tlf depencencies"
+outputs:
+  output_message:
+    description: "Output message"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+#  args:
+#    - ${{ inputs.pokemon_id}}
