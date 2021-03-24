@@ -2,7 +2,8 @@
 
 set -e
 
-echo "Hello!!"
+echo "[info] Input args: $*"
+echo "[info] Printing environment variables:"
 printenv
 
 git clone https://$INPUT_CI_USER:$INPUT_CI_TOKEN@github.com/Telefonica/$INPUT_TLF_BFW.git
