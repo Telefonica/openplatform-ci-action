@@ -18,5 +18,5 @@ jobs:
           artifactory url: https://artifactory.hi.inet/artifactory
           tlf bfw: openplatform-tlfbfw
           args: this are the options
-        - name: Get the directory output
+      - name: Get the directory output
         run: echo "${{ steps.directory.outputs.output_message }}"
