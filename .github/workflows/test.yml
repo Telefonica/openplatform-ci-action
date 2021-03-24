@@ -17,5 +17,6 @@ jobs:
           contint token art: ${{ secrets.CONTINT_TOKEN_ART }}
           artifactory url: https://artifactory.hi.inet/artifactory
           tlf bfw: openplatform-tlfbfw
-      - name: Get the directory output
+          args: this are the options
+        - name: Get the directory output
         run: echo "${{ steps.directory.outputs.output_message }}"
